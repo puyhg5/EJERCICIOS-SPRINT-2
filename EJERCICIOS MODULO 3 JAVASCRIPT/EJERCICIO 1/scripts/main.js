@@ -1,9 +1,10 @@
 var suits = ["Corazones", "Diamantes", "Treboles", "Picas"];
+var cardsBySuit = 12;
 var cards = [];
 var j = 0;
-for (i=0; i<4; i=i+1){
-  for (a=1; a<=12; a=a+1){
-    cards[j] = {valor: a, palo: suits[i]};
+for (i=0; i<suits.length; i=i+1){
+  for (a=1; a<=cardsBySuit; a=a+1){
+    cards[j] = {valor: a, palo: suits[i]}; //Otra opción cards[cards.length]
     j=j+1;
   }
 }
