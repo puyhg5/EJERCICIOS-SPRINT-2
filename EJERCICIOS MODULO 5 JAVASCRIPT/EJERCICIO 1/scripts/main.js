@@ -6,6 +6,7 @@ for (var i=0; i<suits.length; i=i+1){
     cards[cards.length] = {valor: a, palo: suits[i]};
   }
 }
+
 firstIndexCards = 0;
 lastIndexCards = cards.length - 1;
 
