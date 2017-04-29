@@ -1,8 +1,8 @@
 var suits = ["Corazones", "Diamantes", "Treboles", "Picas"];
 var cardsBySuit = 12;
 var cards = [];
-for (var i=0; i<suits.length; i=i+1){
-  for (a=1; a<=cardsBySuit; a=a+1){
+for (var i=0; i<suits.length; i++){
+  for (var j=1; j<=cardsBySuit; j++){
     cards[cards.length] = {valor: a, palo: suits[i]};
   }
 }
@@ -18,7 +18,7 @@ function barajar(cards){
       var indexRandom2 = Math.floor(Math.random() * (lastIndexCards - firstIndexCards) + firstIndexCards);
     }
     var change = cards[indexRandom];
-    var change2 = cards [indexRandom2];
+    var change2 = cards[indexRandom2];
     cards[indexRandom] = change2;
     cards[indexRandom2] = change;
   }
@@ -28,7 +28,6 @@ function barajar(cards){
 var Croupier = {baraja: barajar};
 
 Croupier.baraja(cards);
-
 
 /*function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
