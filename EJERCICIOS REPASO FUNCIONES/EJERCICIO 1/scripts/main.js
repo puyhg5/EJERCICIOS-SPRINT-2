@@ -1,11 +1,11 @@
 function cuentaNumeros(numero, arrayDeNumeros){
-  var repeat = 0;
-  for (i=0; i<arrayDeNumeros.length; i++){
+  var repetido = 0;
+  for (var i=0; i<arrayDeNumeros.length; i++){
     if(numero === arrayDeNumeros[i]){
-      repeat = repeat + 1;
+      repetido = repetido + 1;
     }
   }
-  return repeat;
+  return repetido;
 }
 
 cuentaNumeros(1,[1,3,4,2,1,3,4,5]);
