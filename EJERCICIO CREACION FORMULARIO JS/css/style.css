@@ -1,0 +1,117 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.link{
+  text-decoration: none;
+  color: #365899;
+}
+
+.link:hover{
+  text-decoration: underline;
+}
+
+.form{
+  width: 300px;
+  padding: 20px;
+  background: rgba(255,255,255,1);
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 );
+}
+
+.title{
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.subtitle{
+  font-size: 12px;
+  margin-top: 0px;
+  font-weight: 200;
+}
+
+.fields-form{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.name-surname{
+  display: flex;
+  justify-content: space-between;
+}
+
+.format{
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 5px 3px;
+  width: 100%;
+  margin: 2px 0;
+  font-size: 12px;
+}
+
+.namefield{
+  width: 49%;
+}
+
+.birthday-field{
+  display: block;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+
+.birthday-selector{
+  display: flex;
+  align-items: center;
+  margin-top: 3px;
+}
+
+.format-option{
+  font-size: 10px;
+  padding: 3px;
+}
+
+.small{
+  font-size: 6.5px;
+  padding-left: 5px;
+}
+
+.radioformat{
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.text{
+  width: 80%;
+  font-size: 7px;
+  color: gray;
+  margin: 15px 0;
+}
+
+.button-submit{
+  border: 1px solid;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-shadow: 0 1px 2px rgba(0,0,0,.5);
+  background: linear-gradient(#67ae55, #578843);
+  background-color: #69a74e;
+  box-shadow: inset 0 1px 1px #a4e388;
+  border-color: #3b6e22 #3b6e22 #2c5115;
+  cursor: pointer;
+}
+
+.button-submit:hover{
+  background: linear-gradient(#79bc64, #578843);
+}
